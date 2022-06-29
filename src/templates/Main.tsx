@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
@@ -32,17 +34,18 @@ const Main = (props: IMainProps) => (
             <li className="mr-6">
               <Link href="/about/">
                 <a className="border-none text-gray-700 hover:text-gray-900">
-                  About
+                  Next Link About
                 </a>
               </Link>
+              <a href="/about/">href="/about/"</a>
             </li>
-            <li className="mr-6">
-              <a
-                className="border-none text-gray-700 hover:text-gray-900"
-                href="https://github.com/ixartz/Next-js-Boilerplate"
-              >
-                GitHub
-              </a>
+            <li>
+              <a href="/page1/">href="/page1/"</a>
+              <a href="/page1">href="/page1"</a>
+            </li>
+            <li>
+              <a href="/page2/">href="/page2/"</a>
+              <a href="/page2">href="/page2"</a>
             </li>
           </ul>
         </div>
