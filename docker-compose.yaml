@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: develop-img
+      target: production
     volumes:
       - ./:/app
     networks:
