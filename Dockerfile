@@ -1,3 +1,8 @@
+FROM nginx:stable-alpine as nginx-img
+COPY nginx/master.conf /etc/nginx/conf.d/default.conf
+WORKDIR /
+
+
 FROM node:current-alpine as base
 WORKDIR /app
 COPY package*.json ./
