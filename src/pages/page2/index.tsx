@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-const Page1 = () => {
+const Page2 = () => {
   const router = useRouter();
   console.log(router);
   return (
@@ -13,4 +13,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Page2;
